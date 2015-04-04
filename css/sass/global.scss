@@ -1,0 +1,18 @@
+/* CSS Document - FRONT-END GLOBAL */
+
+/* SASS, COMPASS AND SUZY STUFF */
+/* @import "compass/css3";  */
+
+/* RESET */
+@import "reset";
+
+/* SASS */
+@import "sass";
+
+/* FOR THE RESPONSIVE BEHAVIOUR */
+@import "grid/cowo_grid";
+@import "grid/cowo_grid_queries";
+
+/* THE ...whatever  */
+
+@import "demo";

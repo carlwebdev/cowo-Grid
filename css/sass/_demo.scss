@@ -1,0 +1,88 @@
+/* CSS Document */
+
+
+
+/* START - CLEARFIX */ /* apply clearfix to parent */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/*/END - CLEARFIX */
+
+
+
+
+
+
+
+/* SASS =========================== */
+
+$color1:#ff0; /* white - now red */
+$color2:#8f8772; /* dark brown */
+$color3:#dbd5c5; /* light brown */
+$color4:#646e8f; /* dark blue */
+$color5:#c5cadb; /* light blue */
+
+
+
+
+body {font-family:Arial, Helvetica, sans-serif;}
+
+
+
+
+/* DEMO CSS - DO NOT USE ==================================================================== */
+#container {}
+	/* FULL WIDTH */
+	.container_section_1 {
+		/* background-color:$color1; */ 
+		background-color:$color1;
+		} 
+	.container_section_2 {
+		} 
+		/* CONTENT */
+		.container_content {
+			margin:0 auto; 
+			max-width:1000px; 
+			min-width:320px; 
+			position:relative; 
+			padding:0 20px;
+			} /* CONTENT WIDTH */
+
+
+#header, #footer {overflow:hidden;}
+#header{margin-bottom:50px;}
+
+
+
+#footer{font-size:2rem; margin-top:50px; height:200px; }
+
+
+	#weblogo {float:left; font-size:4rem; margin-bottom:0px;}
+	#slogan {clear:left; font-size:2rem; margin-bottom:30px; margin-left:20%;}
+	
+
+
+
+.section_title {font-size:4rem; margin:40px 0; color:$color1; text-shadow:3px 3px 5px #000;}
+.section_description {font-size:2rem; margin:40px 0; color:$color1; text-shadow:3px 3px 5px #000;}
+.section_separator {font-size:1.5rem; margin:40px 0; color:$color1; text-shadow:3px 3px 5px #000;}
+
+
+
+/* RESPONSIVE GRID FRAMEWORK ============================================================ */
+
+
+
+/* DEMO CSS !!! */
+@media only screen and (max-width: 480px) {
+
+.col:last-of-type {margin-bottom:0px;}
+		
+}
