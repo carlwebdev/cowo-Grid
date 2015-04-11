@@ -1,0 +1,39 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: Layout
+ */
+
+
+body {
+	background-color: $c_white; 
+  }
+
+
+#page {
+	
+	}
+
+	header, footer {
+		background-color: $c_primary;  
+		}
+	
+		
+.frame { 
+	@include centered;
+	/* max-width:1300px; */
+	max-width:1140px;
+	min-width:320px; 
+	@include paddingh($spacing);	
+  } 			
+	
+	
+	
+@media only screen and (max-width: $bp_m) { 
+
+.frame { 
+	@include paddingh($spacing05);	
+  } 
+		
+					
+} // MEDIA-QUERY		

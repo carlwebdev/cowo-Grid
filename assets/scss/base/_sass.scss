@@ -1,0 +1,126 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Sass
+ */
+
+
+/* 
+ * VARIABLES - Colors 
+ */
+
+$c_primary: #009688;
+$c_primary_dark: #00796B; 
+$c_primary_light: #B2DFDB; 
+
+$c_white: #fff; /* white */
+
+$c_accent: #00BCD4;
+
+$c_text: #212121;
+$c_text_2: #727272;
+$c_divider: #B6B6B6;
+
+
+/* 
+ * VARIABLES - Media-Query Break-points
+ */
+$bp_l: 1024px;
+$bp_m: 800px;
+$bp_s: 599px;
+
+
+/* 
+ * VARIABLES - Spacing
+ */
+$spacing: 24px;
+$spacing2: $spacing * 2;
+$spacing3: $spacing * 3;
+$spacing4: $spacing * 4;
+$spacing6: $spacing * 6;
+$spacing8: $spacing * 8;
+$spacing075: $spacing * 0.75;
+$spacing05: $spacing * 0.5;
+$spacing025: $spacing * 0.25;
+$spacing0125: $spacing * 0.125;
+
+
+/* 
+ * VARIABLES - Font-Size
+ */
+$fs_xxxl: 48px;
+$fs_xxl: 34px;
+$fs_xl: 28px;
+$fs_l: 20px;
+$fs_m: 16px;
+$fs_s: 12px;
+
+
+/* 
+ * MIXINS - LAYOUT - Responsive
+ */
+@mixin centered { 
+  margin-left: auto;
+  margin-right: auto;
+  }                 
+@mixin fullwidth { 
+  float: none; 
+  width: 100%;
+  }
+/* 
+ * MIXINS - LAYOUT - Padding
+ */
+@mixin paddingh($paddingh) {
+	padding-left: $paddingh;
+	padding-right: $paddingh;
+	}
+@mixin paddingv($paddingv) {
+	padding-top: $paddingv;
+	padding-bottom: $paddingv;
+	}
+/* 
+ * CLASS EXTENDS - LAYOUT - Clearfix
+ */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+
+
+
+/* CSS Document - SASS FUNCTION TO CALCULATE COLUMN-WIDTHS */
+
+
+/* 
+STEP 1 - Define the gutter-width (gutterwidth )
+*/
+$gutterwidth: 2%; /* LEAVE THIS OUTSIDE AS ITS GENERIC */ /* !!!!!!!!!!!!! MAYBE GUTTER WIDTH CAN BE CHANGED AT BREAKPONT, AND THEN ADD A CSS TRANSITION TO THESE CHANGES IN WIDTH.... */
+
+/* 
+STEP 2 - Create a function to determine the column width (%) in each scenario 
+The 1st variable is the gutterwidth defined in Step 1, the second variable is the number of coilumns (cnumber) 
+*/
+@function my-columnwidth-function($cnumber){
+  @return (100 - (($cnumber - 1) * $gutterwidth)) / $cnumber
+}
+/* 
+STEP 3 - Create a function to determine the width of an element that comprises n columns and n-1 gutters / osea, una fraccción no nth. 
+*/
+@function my-global-columnwidth-function($cnumber, $fraction){
+  @return (((100 - (($cnumber - 1) * $gutterwidth)) / $cnumber) * $fraction) + (($fraction - 1) * $gutterwidth)
+}
+
+
+
+
+
+/* PROVAR DE METER LSO MEDIA QUEIRES PARA LAS FUNCIONES AQUI MISMO !!!!!!!!!!!! PARA CPNVERTIR 8's en 4's, 6's en 3's etc etc etc */

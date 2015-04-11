@@ -1,0 +1,85 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Typography
+ */
+ 
+ 
+ 
+ /* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+@mixin f_roboto { // regular
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	}
+		@mixin f_roboto_italic {
+			@include f_roboto;
+			font-style: italic;
+			}
+	
+	@mixin f_roboto_light {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 300;
+		}	
+		@mixin f_roboto_light_italic {
+			@include f_roboto_light;
+			font-style: italic;
+			}					
+	@mixin f_roboto_bold {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: bold;
+		// font-weight: 700;
+		}
+
+
+@mixin f_main { // CMS MAIN FONT - for body tag 
+    @include f_roboto;
+    }		
+		
+
+
+body { 
+	@include f_roboto_light;
+	}
+	
+	
+a, 
+a:visited, 
+a:hover {
+	// color: $color0;
+	text-decoration:none; 
+	color:#000; 
+	}
+	
+h1, h2 {
+	font-weight: normal;
+	font-weight: 300; // light
+	}
+
+
+
+
+
+
+.section_title {
+	font-size: $fs_xxxl;
+	margin:40px 0; 
+	color:$c_text; 
+	}
+	
+.section_description {
+	font-size: $fs_xxl;
+	margin:40px 0; 
+	color:$c_text_2; 
+	}
+	
+.section_separator {
+	font-size: $fs_xl; 
+	margin:40px 0; 
+	color:$c_text_2;  
+	}
+	
+	
+	
+	

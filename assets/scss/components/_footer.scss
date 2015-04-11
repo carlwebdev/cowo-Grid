@@ -1,0 +1,32 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Footer
+ */
+ 
+footer {
+	overflow:hidden;
+	
+	.inner {
+		overflow:hidden;
+		padding: $spacing05;
+		// text-align:right;  
+		text-align: center;    
+    color:#fff;		
+		}
+			
+	} // footer
+
+
+		.footerContent {
+			font-size: $fs_l;
+			
+			span {font-size: $fs_m;}
+			
+			
+			img {
+				width: 86px;
+				vertical-align: middle;
+				}
+				
+			} // footerContent			

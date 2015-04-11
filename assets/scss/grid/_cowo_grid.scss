@@ -10,7 +10,7 @@
 
 .row {
 	overflow:hidden;  /* VS CLEARFIX - could be jquery to add clearfix class to each row class, but its unnecessary... */     
-	background-color:#ccc; /* DEMO */      
+	// background-color:#ccc; /* DEMO */      
 	// margin-bottom:10px; /* DEMO */
 	}
 
@@ -18,10 +18,29 @@
 .col {
 	float:left; 
 	background-color:#999; /* DEMO */
+	
+	background-color: $c_primary_light; /* DEMO */
+	
+	
+	
 	margin-bottom:$gutterwidth; /* DEMO */
 	position: relative;
 	// padding-top: 20%;
+	
+	
+	padding: 6px;
+	color: $c_white;
+	text-align: center;
 	}
+
+/* RESPONSIVE GRID FRAMEWORK ============================================================ */
+
+/* DEMO CSS !!! */
+@media only screen and (max-width: 480px) {
+
+// .col:last-of-type {margin-bottom:0px;}
+		
+}
 
 
 

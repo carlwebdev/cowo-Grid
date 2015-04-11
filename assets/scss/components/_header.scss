@@ -1,0 +1,73 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Header
+ */
+	
+header {
+	border-top: $spacing solid $c_primary_dark; // implement THIS N OTHER REPOS TOO
+	
+	.inner {
+		padding: $spacing025; 
+		@include paddingv($spacing05);
+		overflow:hidden;
+		position:relative;
+		}
+	
+	} // header
+	
+
+		#main_logo {
+			float:left;
+			font-size: $fs_xxl; 
+			color:#fff;	
+			/*
+			@include f_roboto_light;
+			font-weight: 300 !important;		
+			*/
+			}
+			
+		#slogan {
+			position:absolute; bottom: $spacing05; right: $spacing025;
+			font-size: $fs_l; 
+			color:#fff;	
+			
+			span {}
+			
+			a {
+				color: inherit; // sass for inherit color !!!!!!!!	 NOT, but this new thing is very useful !!!! in sass environments 	
+				&:hover {color: $c_accent;}
+				}					
+
+			} // slogan
+	
+			
+			
+					
+@media only screen and (max-width: $bp_m) { 
+
+	#main_logo {
+		float:none;
+		text-align:center;
+		}
+	#slogan {
+		position:relative;
+		text-align:center;
+		bottom: $spacing0125;						
+		} // slogan
+
+					
+} // MEDIA-QUERY		
+
+
+
+@media only screen and (max-width: $bp_s) { 
+
+	#slogan {
+
+			span {display: block;}
+								
+		} // slogan
+		
+					
+} // MEDIA-QUERY	

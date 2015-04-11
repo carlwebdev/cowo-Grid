@@ -1,0 +1,1503 @@
+/* CSS Document - FRONT-END GLOBAL */
+/* COMPASS */
+/* BASE */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Content
+ */
+/* BOX MODEL */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_reset\.scss}line{font-family:\000039}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Sass - Compass */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000321}}
+html, body,
+div, span,
+h1, h2, h3, h4, h5, h6,
+p,
+pre, code,
+img,
+dl, dt, dd,
+ol, ul, li,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  /* for headings, works */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000329}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000331}}
+img {
+  max-width: 100%;
+  height: auto;
+  /* The height is added to ensure the aspect ratio of the image is retained. */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000339}}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Sass
+ */
+/* 
+ * VARIABLES - Colors 
+ */
+/* white */
+/* 
+ * VARIABLES - Media-Query Break-points
+ */
+/* 
+ * VARIABLES - Spacing
+ */
+/* 
+ * VARIABLES - Font-Size
+ */
+/* 
+ * MIXINS - LAYOUT - Responsive
+ */
+/* 
+ * MIXINS - LAYOUT - Padding
+ */
+/* 
+ * CLASS EXTENDS - LAYOUT - Clearfix
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_sass\.scss}line{font-family:\0000384}}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_sass\.scss}line{font-family:\0000392}}
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_sass\.scss}line{font-family:\0000393}}
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/* CSS Document - SASS FUNCTION TO CALCULATE COLUMN-WIDTHS */
+/* 
+STEP 1 - Define the gutter-width (gutterwidth )
+*/
+/* LEAVE THIS OUTSIDE AS ITS GENERIC */
+/* !!!!!!!!!!!!! MAYBE GUTTER WIDTH CAN BE CHANGED AT BREAKPONT, AND THEN ADD A CSS TRANSITION TO THESE CHANGES IN WIDTH.... */
+/* 
+STEP 2 - Create a function to determine the column width (%) in each scenario 
+The 1st variable is the gutterwidth defined in Step 1, the second variable is the number of coilumns (cnumber) 
+*/
+/* 
+STEP 3 - Create a function to determine the width of an element that comprises n columns and n-1 gutters / osea, una fraccción no nth. 
+*/
+/* PROVAR DE METER LSO MEDIA QUEIRES PARA LAS FUNCIONES AQUI MISMO !!!!!!!!!!!! PARA CPNVERTIR 8's en 4's, 6's en 3's etc etc etc */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Typography
+ */
+/* 
+* SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000342}}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000349}}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000355}}
+h1, h2 {
+  font-weight: normal;
+  font-weight: 300;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000365}}
+.section_title {
+  font-size: 48px;
+  margin: 40px 0;
+  color: #212121;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000371}}
+.section_description {
+  font-size: 34px;
+  margin: 40px 0;
+  color: #727272;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000377}}
+.section_separator {
+  font-size: 28px;
+  margin: 40px 0;
+  color: #727272;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: Layout
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_layout\.scss}line{font-family:\000038}}
+body {
+  background-color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_layout\.scss}line{font-family:\0000317}}
+header, footer {
+  background-color: #009688;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_layout\.scss}line{font-family:\0000322}}
+.frame {
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width:1300px; */
+  max-width: 1140px;
+  min-width: 320px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/base\/_layout\.scss}line{font-family:\0000334}}
+  .frame {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* COMPONENTS */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Header
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\000037}}
+header {
+  border-top: 24px solid #00796b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000310}}
+header .inner {
+  padding: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000320}}
+#main_logo {
+  float: left;
+  font-size: 34px;
+  color: #fff;
+  /*
+  @include f_roboto_light;
+  font-weight: 300 !important;		
+  */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000330}}
+#slogan {
+  position: absolute;
+  bottom: 12px;
+  right: 6px;
+  font-size: 20px;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000337}}
+#slogan a {
+  color: inherit;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000339}}
+#slogan a:hover {
+  color: #00bcd4;
+}
+
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000349}}
+  #main_logo {
+    float: none;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000353}}
+  #slogan {
+    position: relative;
+    text-align: center;
+    bottom: 3px;
+  }
+}
+@media only screen and (max-width: 599px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_header\.scss}line{font-family:\0000368}}
+  #slogan span {
+    display: block;
+  }
+}
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Footer
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_footer\.scss}line{font-family:\000037}}
+footer {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000310}}
+footer .inner {
+  overflow: hidden;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000321}}
+.footerContent {
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000324}}
+.footerContent span {
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000327}}
+.footerContent img {
+  width: 86px;
+  vertical-align: middle;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Grid
+ * File: Content
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/components\/_content\.scss}line{font-family:\000037}}
+main {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* FOR THE RESPONSIVE BEHAVIOUR */
+/* 
+*
+*	cowoGRID - a responsive Grid Framework with Sass
+*	by Carl Johansson (@lo_kal)
+*/
+/* RESPONSIVE GRID FRAMEWORK (just a bit of coloring) ============================================================ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000311}}
+.row {
+  overflow: hidden;
+  /* VS CLEARFIX - could be jquery to add clearfix class to each row class, but its unnecessary... */
+}
+
+/* can be taken away....... not yet */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000318}}
+.col {
+  float: left;
+  background-color: #999;
+  /* DEMO */
+  background-color: #b2dfdb;
+  /* DEMO */
+  margin-bottom: 2%;
+  /* DEMO */
+  position: relative;
+  padding: 6px;
+  color: white;
+  text-align: center;
+}
+
+/* RESPONSIVE GRID FRAMEWORK ============================================================ */
+/* DEMO CSS !!! */
+/* 1of1 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000351}}
+.span_1of1 {
+  width: 100%;
+}
+
+/* SELF-OBVIOUS, no need to define it */
+/* 1of2 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000354}}
+.span_1of2 {
+  width: 49%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000355}}
+.span_1of2:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000356}}
+.span_1of2:nth-of-type(2n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO - THIS ACTUALLY INCLUDES THE SINGLE-LINE SCENARIO, SO THE ABOVE LINE COULD BE DELETED, in all cases ... */
+/* 1of3 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000359}}
+.span_1of3 {
+  width: 32%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000360}}
+.span_1of3:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000361}}
+.span_1of3:nth-of-type(3n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO */
+/* 1of4 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000364}}
+.span_1of4 {
+  width: 23.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000365}}
+.span_1of4:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000366}}
+.span_1of4:nth-of-type(4n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO */
+/* 1of5 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000369}}
+.span_1of5 {
+  width: 18.4%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000370}}
+.span_1of5:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000371}}
+.span_1of5:nth-of-type(5n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO */
+/* 1of6 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000374}}
+.span_1of6 {
+  width: 15%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000375}}
+.span_1of6:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000376}}
+.span_1of6:nth-of-type(6n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO */
+/* 1of7 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000379}}
+.span_1of7 {
+  width: 12.57143%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000380}}
+.span_1of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000381}}
+.span_1of7:nth-of-type(7n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO */
+/* 1of8 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000384}}
+.span_1of8 {
+  width: 10.75%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000385}}
+.span_1of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000386}}
+.span_1of8:nth-of-type(8n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO *
+
+/* 1of8 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000389}}
+.span_1of9 {
+  width: 9.33333%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000390}}
+.span_1of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000391}}
+.span_1of9:nth-of-type(9n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO *
+	
+/* 1of8 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000394}}
+.span_1of10 {
+  width: 8.2%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000395}}
+.span_1of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000396}}
+.span_1of10:nth-of-type(10n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO *
+	
+/* 1of8 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\0000399}}
+.span_1of11 {
+  width: 7.27273%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003100}}
+.span_1of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003101}}
+.span_1of11:nth-of-type(11n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO *		
+
+/* 1of8 ============================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003104}}
+.span_1of12 {
+  width: 6.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003105}}
+.span_1of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003106}}
+.span_1of12:nth-of-type(12n) {
+  margin-right: 0%;
+}
+
+/* FOR MULTI-LINE SCENARIO *
+	
+	
+	
+	
+	
+/* INTERNAL COMBINATIONS - ONLY FOR LAYOUT, NOT FOR REPEATING LINES OF BOXES , at least not at the moment ... !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ============================================================ AND THEN ALSO ODD INTERNAL COMBINATIONS,  SUCH AS 1OF13, AND 7OF13 ETC */
+/* COMBINATIONS of 3 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003117}}
+.span_2of3 {
+  width: 66%;
+  margin-right: 2%;
+}
+
+/* I NEEDATO FIND A BETTER FLWLESS SYSTEM FOR THIS, AS IT AINT WORKING ...... YET */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003118}}
+.span_2of3:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003120}}
+.span_3of3 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+/* I NEEDATO FIND A BETTER FLWLESS SYSTEM FOR THIS, AS IT AINT WORKING ...... YET */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003121}}
+.span_3of3:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 4 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003126}}
+.span_2of4 {
+  width: 49%;
+  margin-right: 2%;
+}
+
+/* I NEEDATO FIND A BETTER FLWLESS SYSTEM FOR THIS, AS IT AINT WORKING ...... YET */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003127}}
+.span_2of4:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003129}}
+.span_3of4 {
+  width: 74.5%;
+  margin-right: 2%;
+}
+
+/* I NEEDATO FIND A BETTER FLWLESS SYSTEM FOR THIS, AS IT AINT WORKING ...... YET */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003130}}
+.span_3of4:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003132}}
+.span_4of4 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+/* I NEEDATO FIND A BETTER FLWLESS SYSTEM FOR THIS, AS IT AINT WORKING ...... YET */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003133}}
+.span_4of4:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 5 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003138}}
+.span_2of5 {
+  width: 38.8%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003139}}
+.span_2of5:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003141}}
+.span_3of5 {
+  width: 59.2%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003142}}
+.span_3of5:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003144}}
+.span_4of5 {
+  width: 79.6%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003145}}
+.span_4of5:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003147}}
+.span_5of5 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003148}}
+.span_5of5:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 6 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003154}}
+.span_2of6 {
+  width: 32%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003155}}
+.span_2of6:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003157}}
+.span_3of6 {
+  width: 49%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003158}}
+.span_3of6:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003160}}
+.span_4of6 {
+  width: 66%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003161}}
+.span_4of6:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003163}}
+.span_5of6 {
+  width: 83%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003164}}
+.span_5of6:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003166}}
+.span_6of6 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003167}}
+.span_6of6:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 7 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003175}}
+.span_2of7 {
+  width: 27.14286%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003176}}
+.span_2of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003178}}
+.span_3of7 {
+  width: 41.71429%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003179}}
+.span_3of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003181}}
+.span_4of7 {
+  width: 56.28571%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003182}}
+.span_4of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003184}}
+.span_5of7 {
+  width: 70.85714%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003185}}
+.span_5of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003187}}
+.span_6of7 {
+  width: 85.42857%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003188}}
+.span_6of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003190}}
+.span_7of7 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003191}}
+.span_7of7:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 8 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003195}}
+.span_2of8 {
+  width: 23.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003196}}
+.span_2of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003198}}
+.span_3of8 {
+  width: 36.25%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003199}}
+.span_3of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003201}}
+.span_4of8 {
+  width: 49%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003202}}
+.span_4of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003204}}
+.span_5of8 {
+  width: 61.75%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003205}}
+.span_5of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003207}}
+.span_6of8 {
+  width: 74.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003208}}
+.span_6of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003210}}
+.span_7of8 {
+  width: 87.25%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003211}}
+.span_7of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003213}}
+.span_8of8 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003214}}
+.span_8of8:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 9 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003218}}
+.span_2of9 {
+  width: 20.66667%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003219}}
+.span_2of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003221}}
+.span_3of9 {
+  width: 32%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003222}}
+.span_3of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003224}}
+.span_4of9 {
+  width: 43.33333%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003225}}
+.span_4of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003227}}
+.span_5of9 {
+  width: 54.66667%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003228}}
+.span_5of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003230}}
+.span_6of9 {
+  width: 66%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003231}}
+.span_6of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003233}}
+.span_7of9 {
+  width: 77.33333%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003234}}
+.span_7of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003236}}
+.span_8of9 {
+  width: 88.66667%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003237}}
+.span_8of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003239}}
+.span_9of9 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003240}}
+.span_9of9:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 10 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003245}}
+.span_2of10 {
+  width: 18.4%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003246}}
+.span_2of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003248}}
+.span_3of10 {
+  width: 28.6%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003249}}
+.span_3of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003251}}
+.span_4of10 {
+  width: 38.8%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003252}}
+.span_4of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003254}}
+.span_5of10 {
+  width: 49%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003255}}
+.span_5of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003257}}
+.span_6of10 {
+  width: 59.2%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003258}}
+.span_6of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003260}}
+.span_7of10 {
+  width: 69.4%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003261}}
+.span_7of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003263}}
+.span_8of10 {
+  width: 79.6%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003264}}
+.span_8of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003266}}
+.span_9of10 {
+  width: 89.8%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003267}}
+.span_9of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003269}}
+.span_10of10 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003270}}
+.span_10of10:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 11 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003274}}
+.span_2of11 {
+  width: 16.54545%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003275}}
+.span_2of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003277}}
+.span_3of11 {
+  width: 25.81818%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003278}}
+.span_3of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003280}}
+.span_4of11 {
+  width: 35.09091%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003281}}
+.span_4of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003283}}
+.span_5of11 {
+  width: 44.36364%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003284}}
+.span_5of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003286}}
+.span_6of11 {
+  width: 53.63636%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003287}}
+.span_6of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003289}}
+.span_7of11 {
+  width: 62.90909%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003290}}
+.span_7of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003292}}
+.span_8of11 {
+  width: 72.18182%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003293}}
+.span_8of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003295}}
+.span_9of11 {
+  width: 81.45455%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003296}}
+.span_9of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003298}}
+.span_10of11 {
+  width: 90.72727%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003299}}
+.span_10of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003301}}
+.span_11of11 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003302}}
+.span_11of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* COMBINATIONS of 11 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003306}}
+.span_2of12 {
+  width: 15%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003307}}
+.span_2of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003309}}
+.span_3of12 {
+  width: 23.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003310}}
+.span_3of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003312}}
+.span_4of12 {
+  width: 32%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003313}}
+.span_4of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003315}}
+.span_5of12 {
+  width: 40.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003316}}
+.span_5of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003318}}
+.span_6of12 {
+  width: 49%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003319}}
+.span_6of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003321}}
+.span_7of12 {
+  width: 57.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003322}}
+.span_7of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003324}}
+.span_8of12 {
+  width: 66%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003325}}
+.span_8of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003327}}
+.span_9of12 {
+  width: 74.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003328}}
+.span_9of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003330}}
+.span_10of12 {
+  width: 83%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003331}}
+.span_10of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003333}}
+.span_11of12 {
+  width: 91.5%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003334}}
+.span_11of12:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003336}}
+.span_12of12 {
+  width: 100%;
+  margin-right: 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid\.scss}line{font-family:\00003337}}
+.span_11of11:last-of-type {
+  margin-right: 0%;
+}
+
+/* FOR SINGLE-LINE SCENARIO */
+/* CSS Document */
+/* PLACE CUSTOMIZED QUERIES FOR THE RWD GRID HERE, USING THE FORMULAS - SASS FUNCTONS 8that have bee exlained)  AT YOUR DISPLOSAL */
+/* ========================================= */
+/* CUSTOMIZED WIDTH ======================== */
+/* ========================================= */
+@media only screen and (max-width: 800px) {
+  /* 1of2's turn into 1of4's */
+  /* DEMO ONLY */
+  /*
+  .span_1of2 {width:my-columnwidth-function(4); margin-right:$gutterwidth; FONT-SIZE:3REM;} 
+  	.span_1of2:last-of-type {margin-right:0%;} // FOR SINGLE-LINE SCENARIO 
+  	.span_1of2:nth-of-type(2n) {margin-right:0%;} // FOR MULTI-LINE SCENARIO - THIS ACTUALLY INCLUDES THE SINGLE-LINE SCENARIO, SO THE ABOVE LINE COULD BE DELETED, in all cases ...
+  */
+}
+/* ========================================================================================================================================== */
+/* ========================================= */
+/* FINAL WIDTH ============================= */
+/* ========================================= */
+/* turn everything into 100% width at this viewport width */
+@media only screen and (max-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000353}}
+  .span_1of2,
+  .span_1of3,
+  .span_1of4,
+  .span_1of5,
+  .span_1of6,
+  .span_1of7,
+  .span_1of8,
+  .span_1of9,
+  .span_1of10,
+  .span_1of11,
+  .span_1of12 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  /* BAJAO TB FALTAN LOS DE 100%'S aunque sean obvios claro... */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000356}}
+  .span_2of3 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000359}}
+  .span_2of4,
+  .span_3of4 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000363}}
+  .span_2of5,
+  .span_3of5,
+  .span_4of5 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000368}}
+  .span_2of6,
+  .span_3of6,
+  .span_4of6,
+  .span_5of6 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000374}}
+  .span_2of7,
+  .span_3of7,
+  .span_4of7,
+  .span_5of7,
+  .span_6of7 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000381}}
+  .span_2of8,
+  .span_3of8,
+  .span_4of8,
+  .span_5of8,
+  .span_6of8,
+  .span_7of8 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000389}}
+  .span_2of9,
+  .span_3of9,
+  .span_4of9,
+  .span_5of9,
+  .span_6of9,
+  .span_7of9,
+  .span_8of9 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\0000398}}
+  .span_2of10,
+  .span_3of10,
+  .span_4of10,
+  .span_5of10,
+  .span_6of10,
+  .span_7of10,
+  .span_8of10,
+  .span_9of10 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\00003108}}
+  .span_2of11,
+  .span_3of11,
+  .span_4of11,
+  .span_5of11,
+  .span_6of11,
+  .span_7of11,
+  .span_8of11,
+  .span_9of11,
+  .span_10of11 {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Grid\/assets\/scss\/grid\/_cowo_grid_queries\.scss}line{font-family:\00003119}}
+  .span_2of12,
+  .span_3of12,
+  .span_4of12,
+  .span_5of12,
+  .span_6of12,
+  .span_7of12,
+  .span_8of12,
+  .span_9of12,
+  .span_10of12,
+  .span_11of12 {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
