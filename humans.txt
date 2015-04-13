@@ -1,0 +1,40 @@
+/* humanstxt.org */
+
+
+Developed by COWOWO
+http://www.cowowo.cat
+info [at] cowowo.cat
+
+
+/* TEAM */
+	
+	Web Developer: Carl Johansson
+	Contact: carl [at] cowowo.cat
+	Twitter: @lo_kal
+	From: Barcelona, Catalonia, Spain
+
+
+/* THANKS */
+
+
+
+/* SITE */
+
+	Last update:
+	Language: English
+	Doctype: HTML5
+	IDE: 
+	
+	
+Standards: 
+
+HTML5
+CSS3
+Sass (.scss)
+
+
+
+/* OTHER CREDITS */
+
+Fonts: Google Fonts - http://www.google.com/fonts - Ubuntu
+Colors: Material Pallete - http://www.materialpalette.com/
