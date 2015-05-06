@@ -7,16 +7,13 @@
 <meta name="description" content="cowo-Reset is a simple CSSS reset file built by cowowo.cat"> 
 <meta name="keywords" content="css reset"> 		
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<link rel="stylesheet" type="text/css" href="assets/css/global.css" > 
+<link rel="stylesheet" href="assets/css/global.css" > 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
 </head>
 <body>
 <div id="page">
 
-
 <a href="https://github.com/carlwebdev/cowo-Grid" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-
-
 
 	<header>
  	 <div class="frame">
@@ -37,325 +34,171 @@
      <div class="frame">
         <div class="inner">
     
-
-
+<div class="section_title">Rows</div>
+<!--
 <div class="section_title">single line divisions</div>
 
 <div class="section_description">Create rows...</div>
-
-
+-->
+<div class="section_separator">Rows with same component</div>
 
 <div class="row">
 	<div class="col span_1of1">1of1</div>   
 </div>
 
 <div class="row">
-	<div class="col span_1of2">1of2</div>
-  <div class="col span_1of2">1of2</div>   
+	<? for ($x = 0; $x <= 1; $x++) { ?>
+    <div class="col span_1of2">1of2</div>
+  <? } ?>   
 </div>
 
 <div class="row">
-	<div class="col span_1of3">1of3</div>
-  <div class="col span_1of3">1of3</div>
-  <div class="col span_1of3">1of3</div>   
+	<? for ($x = 0; $x <= 2; $x++) { ?>
+    <div class="col span_1of3">1of3</div>
+  <? } ?>  
 </div>
 
 <div class="row">
-	<div class="col span_1of4">1of4</div>
-    <div class="col span_1of4">1of4</div>
+	<? for ($x = 0; $x <= 3; $x++) { ?>
     <div class="col span_1of4">1of4</div> 
-    <div class="col span_1of4">1of4</div>   
+  <? } ?>     
 </div>
 
 <div class="row">
-	<div class="col span_1of5">1of5</div>
-    <div class="col span_1of5">1of5</div>
-    <div class="col span_1of5">1of5</div> 
-    <div class="col span_1of5">1of5</div>  
+	<? for ($x = 0; $x <= 4; $x++) { ?>
     <div class="col span_1of5">1of5</div>   
+  <? } ?>   
 </div>
 
 <div class="row">
-	<div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div> 
-    <div class="col span_1of6">1of6</div>  
-    <div class="col span_1of6">1of6</div> 
+	<? for ($x = 0; $x <= 5; $x++) { ?>
     <div class="col span_1of6">1of6</div>   
+  <? } ?> 
 </div>
 
 <div class="row">
-	<div class="col span_1of7">1of7</div>
-    <div class="col span_1of7">1of7</div>
+	<? for ($x = 0; $x <= 6; $x++) { ?>
     <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div>  
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div>   
+  <? } ?>    
 </div>
 
 <div class="row">
-	<div class="col span_1of8">1of8</div>
-    <div class="col span_1of8">1of8</div>
+	<? for ($x = 0; $x <= 7; $x++) { ?>
     <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div>  
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div>   
+  <? } ?>    
 </div>
 
 <div class="row">
-	<div class="col span_1of9">1of9</div>
+	<? for ($x = 0; $x <= 8; $x++) { ?>
     <div class="col span_1of9">1of9</div>
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div>  
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div>
-    <div class="col span_1of9">1of9</div>   
+  <? } ?>  
 </div>
 
 <div class="row">
-	<div class="col span_1of10">1of10</div>
-    <div class="col span_1of10">1of10</div>
+	<? for ($x = 0; $x <= 9; $x++) { ?>
     <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>  
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>
-    <div class="col span_1of10">1of10</div>
-    <div class="col span_1of10">1of10</div>   
+  <? } ?>    
 </div>
 
 <div class="row">
-	<div class="col span_1of11">1of11</div>
+	<? for ($x = 0; $x <= 10; $x++) { ?>
     <div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>  
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div>       
+  <? } ?>       
 </div>
 
 <div class="row">
-	<div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div>
+	<? for ($x = 0; $x <= 11; $x++) { ?>
     <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>  
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div>       
+  <? } ?>       
 </div>
 
 
+<!--
 <div class="section_title">multi line divisions</div>
 
 <div class="section_description">Create array of items of same (proportion)</div>
+-->
 
+
+<div class="section_title">Grids</div>
+<!--
+<div class="section_title">single line divisions</div>
+
+<div class="section_description">Create rows...</div>
+-->
+<div class="section_separator">Grids with same component</div>
 
 
 <div class="row">
-	<div class="col span_1of1">1of1</div> 
-    <div class="col span_1of1">1of1</div>   
+	<? for ($x = 0; $x <= 2; $x++) { ?>
+    <div class="col span_1of1">1of1</div> 
+  <? } ?>     
 </div>
 
 <div class="row">
-	<div class="col span_1of2">1of2</div>
-    <div class="col span_1of2">1of2</div>   
-	<div class="col span_1of2">1of2</div>
-    <div class="col span_1of2">1of2</div>           
+	<? for ($x = 0; $x <= 5; $x++) { ?>
+    <div class="col span_1of2">1of2</div>
+  <? } ?>             
 </div>
 
 <div class="row">
-	<div class="col span_1of3">1of3</div>
-    <div class="col span_1of3">1of3</div>
-    <div class="col span_1of3">1of3</div>  
-	<div class="col span_1of3">1of3</div>
-    <div class="col span_1of3">1of3</div>
-    <div class="col span_1of3">1of3</div>       
+	<? for ($x = 0; $x <= 8; $x++) { ?>
+    <div class="col span_1of3">1of3</div> 
+  <? } ?>        
 </div>
 
 <div class="row">
-	<div class="col span_1of4">1of4</div>
-    <div class="col span_1of4">1of4</div>
-    <div class="col span_1of4">1of4</div>  
-	<div class="col span_1of4">1of4</div>
-    <div class="col span_1of4">1of4</div>
-    <div class="col span_1of4">1of4</div>  
-	<div class="col span_1of4">1of4</div>
-    <div class="col span_1of4">1of4</div>        
+	<? for ($x = 0; $x <= 11; $x++) { ?>
+    <div class="col span_1of4">1of4</div> 
+  <? } ?>          
 </div>
 
 <div class="row">
-	<div class="col span_1of5">1of5</div>
-    <div class="col span_1of5">1of5</div>
+	<? for ($x = 0; $x <= 14; $x++) { ?>
     <div class="col span_1of5">1of5</div> 
-    <div class="col span_1of5">1of5</div>  
-    <div class="col span_1of5">1of5</div>  
-	<div class="col span_1of5">1of5</div>
-    <div class="col span_1of5">1of5</div>
-    <div class="col span_1of5">1of5</div> 
-    <div class="col span_1of5">1of5</div>  
-    <div class="col span_1of5">1of5</div>                    
+  <? } ?>                       
 </div>
 
 <div class="row">
-	<div class="col span_1of6">1of6</div>
+	<? for ($x = 0; $x <= 17; $x++) { ?>
     <div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div> 
-	<div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div> 
-	<div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div> 
-	<div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div>
-    <div class="col span_1of6">1of6</div>                   
+  <? } ?>                       
 </div>
 
 <div class="row">
-	<div class="col span_1of7">1of7</div>
+	<? for ($x = 0; $x <= 20; $x++) { ?>
     <div class="col span_1of7">1of7</div>
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div>  
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div>  
-	<div class="col span_1of7">1of7</div>
-    <div class="col span_1of7">1of7</div>
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div>  
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div> 
-    <div class="col span_1of7">1of7</div>             
+  <? } ?>              
 </div>
 
 <div class="row">
-	<div class="col span_1of8">1of8</div>
-    <div class="col span_1of8">1of8</div>
+	<? for ($x = 0; $x <= 23; $x++) { ?>
     <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div>  
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-	<div class="col span_1of8">1of8</div>
-    <div class="col span_1of8">1of8</div>
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div>  
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div> 
-    <div class="col span_1of8">1of8</div>             
+  <? } ?>            
 </div>
 
 <div class="row">
-	<div class="col span_1of9">1of9</div>
-    <div class="col span_1of9">1of9</div>
+	<? for ($x = 0; $x <= 26; $x++) { ?>
     <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div>  
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-	<div class="col span_1of9">1of9</div>
-    <div class="col span_1of9">1of9</div>
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div>  
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div>  
-    <div class="col span_1of9">1of9</div> 
-    <div class="col span_1of9">1of9</div>              
+  <? } ?>               
 </div>
 
 <div class="row">
-	<div class="col span_1of10">1of10</div>
-    <div class="col span_1of10">1of10</div>
+	<? for ($x = 0; $x <= 29; $x++) { ?>
     <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>  
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-	<div class="col span_1of10">1of10</div>
-    <div class="col span_1of10">1of10</div>
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>  
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>  
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>   
-    <div class="col span_1of10">1of10</div> 
-    <div class="col span_1of10">1of10</div>               
+  <? } ?>               
 </div>
 
 <div class="row">
-	<div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div> 
+	<? for ($x = 0; $x <= 32; $x++) { ?>
     <div class="col span_1of11">1of11</div>  
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-	<div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div>
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>  
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>  
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>   
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>  
-    <div class="col span_1of11">1of11</div> 
-    <div class="col span_1of11">1of11</div>                  
+  <? } ?>                  
 </div>
 
 <div class="row">
-	<div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div>
+	<? for ($x = 0; $x <= 35; $x++) { ?>
     <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>  
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-	<div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div>
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>  
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>  
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>   
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>  
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div> 
-    <div class="col span_1of12">1of12</div>                      
+  <? } ?>                      
 </div>
 
 
@@ -363,9 +206,12 @@
 <div class="section_title">single line combinations</div>
 
 <div class="section_description">Create rows with differently proportionated elements</div>
+<div class="section_separator">Rows with columns of differet size.. case 1</div>
 
 
 <div class="section_separator">Multiples of 3rds</div>
+
+
 
 <!-- add wrapper for this case -->
 
@@ -758,6 +604,83 @@
 
 
 
+
+
+<div class="section_title">TESTING NEW THING</div>
+
+<div class="section_description">Rows with asimetrics...</div>
+
+
+
+<div class="section_separator">Multiples of 4ths</div>
+
+<div class="row">
+    <div class="col span_1of4">1of4</div>
+    
+    <div class="col span_1of4">1of4</div>  
+		<div class="col span_2of4">2of4</div>      
+</div>
+
+<div class="row">
+    <div class="col span_1of4">1of4</div>
+    <div class="col span_2of4">2of4</div> 
+    <div class="col span_1of4">1of4</div>   
+</div>
+
+<div class="row">
+		<div class="col span_2of4">2of4</div> 
+    <div class="col span_1of4">1of4</div>
+    <div class="col span_1of4">1of4</div>   
+</div>
+
+<div class="row">
+		<div class="col span_1of2">1of2</div> 
+    <div class="col span_1of4">1of4</div>
+    <div class="col span_1of4">1of4</div>   
+</div>
+
+
+
+<div class="section_separator">Multiples of 5ths</div>
+
+<div class="row">
+	<div class="col span_1of5">1of5</div>
+  <div class="col span_1of5">1of5</div>
+  <div class="col span_1of5">1of5</div>
+	<div class="col span_2of5">4of5</div> 
+</div>
+
+<div class="row">
+    <div class="col span_2of5">2of5</div>  
+    <div class="col span_3of5">3of5</div>  
+</div>
+
+<div class="row">
+	<div class="col span_1of5">1of5</div>
+	<div class="col span_4of5">4of5</div> 
+</div>
+
+<div class="row">
+    <div class="col span_2of5">2of5</div>  
+    <div class="col span_3of5">3of5</div>  
+</div>
+  
+  
+  
+  
+  
+  
+<div class="row">
+	<div class="col span_1of5">1of5</div>
+  <div class="col span_2of5">4of5</div> 
+	<div class="col span_2of5">4of5</div> 
+</div>
+
+<div class="row">
+  <div class="col span_2of5">4of5</div> 
+	<div class="col span_2of5">4of5</div> 
+  <div class="col span_1of5">1of5</div> 
+</div>
 
   
         </div> <!-- /inner -->
