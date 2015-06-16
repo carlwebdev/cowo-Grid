@@ -10,6 +10,16 @@
 
 
 
+
+
+// do testings with own gutterwidth in each row declaration
+
+// and then no gutter , easy, and then gutter in pixels... that changes everything, and it's not really needed, in rwd, so fuck it, 
+
+// ergo, just stay with default system, tuenable, and pasable a 0.
+
+
+
 /* CSS Document - SASS FUNCTION TO CALCULATE COLUMN-WIDTHS */
 
 
@@ -17,6 +27,9 @@
 STEP 1 - Define the gutter-width (gutterwidth )
 */
 $gutterwidth: 2%; /* LEAVE THIS OUTSIDE AS ITS GENERIC */ /* !!!!!!!!!!!!! MAYBE GUTTER WIDTH CAN BE CHANGED AT BREAKPONT, AND THEN ADD A CSS TRANSITION TO THESE CHANGES IN WIDTH.... */
+
+// gutterwidth should belong to each grid row declaration, so that there can be different values
+
 
 /* 
 STEP 2 - Create a function to determine the column width (%) in each scenario 
@@ -38,69 +51,53 @@ STEP 3 - Create a function to determine the width of an element that comprises n
 .row {
 	overflow:hidden;  /* VS CLEARFIX - could be jquery to add clearfix class to each row class, but its unnecessary... */     
 	// background-color:#ccc; /* DEMO */      
-	// margin-bottom:10px; /* DEMO */
+	// margin-bottom:24px; /* DEMO */
 	}
 
-/* can be taken away....... not yet */
+
 .col {
 	float:left; 
-	background-color:#999; /* DEMO */
-	
-	background-color: $c_primary_light; /* DEMO */
 	margin-bottom:$gutterwidth; /* DEMO */
-	position: relative;
+	
+	&:last-of-type {
+		margin-right:0%; // VITAL FOR ASSYMETRIC SCENARIOS
+		// background-color: #FF0; // va bien para quitar elmargin right, pero solo en 1-line scenario !!!!
+		}
+		
+	} // col
+	
+/* DEMO CSS !!! */
+.col {
+	background-color: $c_primary_light; /* DEMO */
+	// position: relative;
 	padding: 6px;
 	color: $c_white;
 	text-align: center;
 	
-	&:last-of-type {
-		// background-color: #999; // va bien para quitar elmargin right, pero solo en 1-line scenario !!!!
+		@media only screen and (max-width: 800px) {
+			font-size: 12px; 
+			padding: 6px 0px;
+			} // MEDIA-QUERY
 		
-		margin-right:0%; // CON ESTO ASEGURAMOS LOS 1 LINE SCENARIOS, PERO ENCIMA TAMBIEN QUE CON LOS CASOS ASIMETRICOS (de tb solo 1 linea, of course, but it's good enough !)
-		
-		}
+		@media only screen and (max-width: 600px) {
+			font-size: 10px; 
+			// font-size: 8px;
+			// padding: 6px 0px;
+			} // MEDIA-QUERY	
 	
-	}
-
+	} // col
+	
+	
+	
+	
+	
+	
+	
 /* RESPONSIVE GRID FRAMEWORK ============================================================ */
 
-/* DEMO CSS !!! */
+.span_1of1 {width:100%;} /* REDUNDANT - SELF-OBVIOUS, no need to define it */
 
-
-
-@media only screen and (max-width: 800px) {
-
-
-
-.col {
-	font-size: 12px; 
-	padding: 6px 0px;
-} // DEMO
-
-		
-}
-
-
-
-@media only screen and (max-width: 480px) {
-
-// .col:last-of-type {margin-bottom:0px;}
-
-
-.col {
-	font-size: 10px; 
-	// padding: 6px 0px;
-} // DEMO
-
-		
-}
-
-
-
-
-.span_1of1 {width:100%;} /* SELF-OBVIOUS, no need to define it */
-
-.span_1of2 {width:my-columnwidth-function(2); margin-right:$gutterwidth;} // margfin - righ: gutterwidth . . . .gutter width, could be added to col !!!!!!!!!!!!!!!!!
+.span_1of2 {width:my-columnwidth-function(2); margin-right:$gutterwidth;} // margin - right: gutterwidth . . . .gutter width, could be added to col !!!!!!!!!!!!!!!!!
 	.span_1of2:nth-of-type(2n) {margin-right:0%;} /* FOR SINGLE-LINE & MULTI-LINE SCENARIO */ 
 
 .span_1of3 {width:my-columnwidth-function(3); margin-right:$gutterwidth;} 

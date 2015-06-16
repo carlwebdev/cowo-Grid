@@ -15,7 +15,7 @@
 /* 1of2's turn into 1of4's */ /* DEMO ONLY */
 /*
 .span_1of2 {width:my-columnwidth-function(4); margin-right:$gutterwidth; FONT-SIZE:3REM;} 
-	.span_1of2:last-of-type {margin-right:0%;} // FOR SINGLE-LINE SCENARIO 
+	// .span_1of2:last-of-type {margin-right:0%;} // FOR SINGLE-LINE SCENARIO 
 	.span_1of2:nth-of-type(2n) {margin-right:0%;} // FOR MULTI-LINE SCENARIO - THIS ACTUALLY INCLUDES THE SINGLE-LINE SCENARIO, SO THE ABOVE LINE COULD BE DELETED, in all cases ...
 */
 

@@ -31,8 +31,10 @@ header {
 			position:absolute; bottom: $spacing05; right: $spacing025;
 			font-size: $fs_l; 
 			color:#fff;	
-			
-			span {}
+
+			span {
+				@media only screen and (max-width: $bp_s) {display: block;}				
+				} // span
 			
 			a {
 				color: inherit; // sass for inherit color !!!!!!!!	 NOT, but this new thing is very useful !!!! in sass environments 	
@@ -61,13 +63,4 @@ header {
 
 
 
-@media only screen and (max-width: $bp_s) { 
 
-	#slogan {
-
-			span {display: block;}
-								
-		} // slogan
-		
-					
-} // MEDIA-QUERY	
