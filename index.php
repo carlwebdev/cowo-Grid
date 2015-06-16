@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>cowo-Grid - a simple responsive sass grid by @carlwebdev</title>
-<meta name="description" content="cowo-Reset is a simple CSSS reset file built by cowowo.cat"> 
+<meta name="description" content="cowo-Grid is a simple simple responsive sass grid built by cowowo.cat"> 
 <meta name="keywords" content="css reset"> 		
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
 <link rel="stylesheet" href="assets/css/global.css" > 
