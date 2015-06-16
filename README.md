@@ -1,4 +1,5 @@
 # cowo-Grid
 a simple Responsive Grid
 
-UNDER CONSTRUCTION
+cowo-Grid is a flexible grid structure for responsive web design.
+It is built with a Sass function.
