@@ -7,7 +7,7 @@
 <meta name="description" content="cowo-Grid is a simple simple responsive Sass grid built by cowowo.cat"> 
 <meta name="keywords" content="css reset"> 		
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<link rel="stylesheet" href="assets/css/global.css" > 
+<link rel="stylesheet" href="assets/style/css/global.css" > 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
 </head>
 <body>
@@ -46,59 +46,59 @@
 	<div class="col span_1of1">1of1</div>   
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 1; $x++) { ?>
+	<?php for ($x = 0; $x <= 1; $x++) { ?>
     <div class="col span_1of2">1of2</div>
-  <? } ?>   
+  <?php } ?>   
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 2; $x++) { ?>
+	<?php for ($x = 0; $x <= 2; $x++) { ?>
     <div class="col span_1of3">1of3</div>
-  <? } ?>  
+  <?php } ?>  
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 3; $x++) { ?>
+	<?php for ($x = 0; $x <= 3; $x++) { ?>
     <div class="col span_1of4">1of4</div> 
-  <? } ?>     
+  <?php } ?>     
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 4; $x++) { ?>
+	<?php for ($x = 0; $x <= 4; $x++) { ?>
     <div class="col span_1of5">1of5</div>   
-  <? } ?>   
+  <?php } ?>   
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 5; $x++) { ?>
+	<?php for ($x = 0; $x <= 5; $x++) { ?>
     <div class="col span_1of6">1of6</div>   
-  <? } ?> 
+  <?php } ?> 
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 6; $x++) { ?>
+	<?php for ($x = 0; $x <= 6; $x++) { ?>
     <div class="col span_1of7">1of7</div> 
-  <? } ?>    
+  <?php } ?>    
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 7; $x++) { ?>
+	<?php for ($x = 0; $x <= 7; $x++) { ?>
     <div class="col span_1of8">1of8</div> 
-  <? } ?>    
+  <?php } ?>    
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 8; $x++) { ?>
+	<?php for ($x = 0; $x <= 8; $x++) { ?>
     <div class="col span_1of9">1of9</div>
-  <? } ?>  
+  <?php } ?>  
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 9; $x++) { ?>
+	<?php for ($x = 0; $x <= 9; $x++) { ?>
     <div class="col span_1of10">1of10</div> 
-  <? } ?>    
+  <?php } ?>    
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 10; $x++) { ?>
+	<?php for ($x = 0; $x <= 10; $x++) { ?>
     <div class="col span_1of11">1of11</div>
-  <? } ?>       
+  <?php } ?>       
 </div>
 <div class="row">
-	<? for ($x = 0; $x <= 11; $x++) { ?>
+	<?php for ($x = 0; $x <= 11; $x++) { ?>
     <div class="col span_1of12">1of12</div> 
-  <? } ?>       
+  <?php } ?>       
 </div>
 
 <div class="section_separator"></div>
